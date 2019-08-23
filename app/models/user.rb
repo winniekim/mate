@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   mount_uploader :image, ImageUploader
   has_many :user_items
+  has_many :diaries
 
   def like?(item)
     UserItem.find_by(user: self, item: item).present?
