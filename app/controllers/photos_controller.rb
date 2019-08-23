@@ -1,5 +1,5 @@
 class PhotosController < InheritedResources::Base
-
+  before_action :authenticate_user!
   private
 
     def photo_params
