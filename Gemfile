@@ -74,3 +74,4 @@ gem 'jquery-rails'
 gem "font-awesome-rails"
 gem 'carrierwave'
 gem 'activeadmin'
+gem 'mini_magick'

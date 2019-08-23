@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_10_134725) do
+ActiveRecord::Schema.define(version: 2019_08_23_112901) do
 
   create_table "chats", force: :cascade do |t|
     t.text "message"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(version: 2019_08_10_134725) do
     t.datetime "updated_at", null: false
     t.integer "area"
     t.integer "category"
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|

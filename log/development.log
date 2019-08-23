@@ -2638,3 +2638,2278 @@ Processing by ChatsController#create as JSON
 Completed 201 Created in 184ms (Views: 5.3ms | ActiveRecord: 13.6ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 121.134.206.100 at 2019-08-23 11:05:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (408.1ms)
+Completed 200 OK in 555ms (Views: 548.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-23 11:05:22 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190823112901)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190823112901_create_photos.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190823112901_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190823112901"]]
+  ↳ bin/rails:9
+  [1m[35m (18.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 121.134.206.100 at 2019-08-23 11:42:36 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 6593ms (Views: 6591.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-23 11:42:42 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:42:45 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/environment/mate/app/controllers/photos_controller.rb:6: syntax error, unexpected ':', expecting ')'
+      params.require(:photo :remove_photo).permit(:title, ...
+                            ^):
+  
+app/controllers/photos_controller.rb:6: syntax error, unexpected ':', expecting ')'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:43:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 11:43:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (713.8ms)
+  Rendered photos/new.html.erb within layouts/application (715.8ms)
+Completed 500 Internal Server Error in 725ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f289d8dcad0>:0x00007f289e4af128>):
+    24:   <div class="field">
+    25:     <%= form.label :image %>
+    26:     <%= form.file_field :image %>
+    27:     <% if f.object.image? %>
+    28:       <%= image_tag f.object.image.thumb.url %>
+    29:       <%= f.label :remove_image %>
+    30:       <%= f.check_box :remove_image %> 
+  
+app/views/photos/_form.html.erb:27:in `block in _app_views_photos__form_html_erb___3815979473332754526_69906215626260'
+app/views/photos/_form.html.erb:1:in `_app_views_photos__form_html_erb___3815979473332754526_69906215626260'
+app/views/photos/new.html.erb:3:in `_app_views_photos_new_html_erb__1267354264797690226_69906215562560'
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 11:43:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (0.7ms)
+  Rendered photos/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/environment/mate/app/views/photos/_form.html.erb:35: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/photos/_form.html.erb:35: syntax error, unexpected ensure, expecting end-of-input
+app/views/photos/new.html.erb:3:in `_app_views_photos_new_html_erb__1267354264797690226_69906229981560'
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 11:43:32 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 11:43:41 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iozBuCkMQkInqq+Ru8bRlA50ZDVDMOXmAlE9/WpoCbgc3/JZQqhgbwyIG1oVesrZWLrKghdOR5jtYrlroHprrw==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f289e97a4c8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-3696-1dy9wrp.jpg>, @original_filename="csvc_b_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"csvc_b_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (2.0ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "csvc_b_1.jpg"], ["created_at", "2019-08-23 11:43:41.331303"], ["updated_at", "2019-08-23 11:43:41.331303"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/1
+Completed 302 Found in 40ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:43:41 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f28a4690950>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb___4107216402001600340_69906270593420'
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:44:00 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f28b0213678>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= photo_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb___4107216402001600340_69906365339100'
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:44:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f289dc073e0>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb___4107216402001600340_69906205180480'
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:44:14 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:44:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f28a03c2b50>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb___4107216402001600340_69906231799980'
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:45:50 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f28b0176828>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb___4107216402001600340_69906364812960'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (7.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:46:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f55a4053650>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_70002900304960'
+Started GET "/photos/1" for 121.134.206.100 at 2019-08-23 11:49:08 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f5594546488>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_70002768686520'
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 11:49:12 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iozBuCkMQkInqq+Ru8bRlA50ZDVDMOXmAlE9/WpoCbgc3/JZQqhgbwyIG1oVesrZWLrKghdOR5jtYrlroHprrw==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055fecfd214e0 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1qgq23l.jpg>, @original_filename="csvc_b_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"csvc_b_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (0.9ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "csvc_b_1.jpg"], ["created_at", "2019-08-23 11:49:12.948575"], ["updated_at", "2019-08-23 11:49:12.948575"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/2
+Completed 302 Found in 105ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/photos/2" for 121.134.206.100 at 2019-08-23 11:49:13 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f5594741260>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.thumb.url %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_70002769732560'
+Started GET "/photos/2" for 121.134.206.100 at 2019-08-23 11:50:42 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1009ms (Views: 1006.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:50:46 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/photos/2" for 121.134.206.100 at 2019-08-23 11:50:49 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O72wr9RqD+/Zy3UHJ340zEffa+0bRbxNgUQ8Pi2teoet7oNOv84twvLpwcyJwi+BERHFWk87HjNud7io578YkA==", "id"=>"2"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (0.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 2]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 28ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:50:49 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/photos/1" for 121.134.206.100 at 2019-08-23 11:50:51 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hoD4sorc5DzgA+ayILAStH5+U7aPM1/vnI82jNdzhE4Q08tT4XjGEcshUnmODAn5KLD9AdtN/ZFzvLIaHWHmWQ==", "id"=>"1"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (0.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 26ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:50:51 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 11:50:52 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (11.5ms)
+  Rendered photos/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 11:50:58 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/PdKXJyR+t6EQ1zLVbA4kPFW4sG9n8pfz8woEazyGepqpHm99zXY869h6AD7DCPdp5hMdunhaCEg/6yHZuB7/Q==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055feccc902b8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-evieyo.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (1.0ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "치스비치_프로필_2.jpeg"], ["created_at", "2019-08-23 11:50:58.909898"], ["updated_at", "2019-08-23 11:50:58.909898"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/3
+Completed 302 Found in 40ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/photos/3" for 121.134.206.100 at 2019-08-23 11:50:59 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 94ms (Views: 91.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:51:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 11:56:28 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 11:56:35 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (3.7ms)
+  Rendered photos/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 11:56:40 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ndau7WD90D2rU8RnTza3P/6RafJqES94k87xTpyL2VejhZ0MC1nyEIBxcKzhiqxyqF/HRT5vjQZ8/XXYVpm7QA==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592e80618 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1yll678.jpg>, @original_filename="csvc_b_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"csvc_b_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (1.7ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "csvc_b_1.jpg"], ["created_at", "2019-08-23 11:56:40.110612"], ["updated_at", "2019-08-23 11:56:40.110612"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/4
+Completed 302 Found in 46ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 11:56:40 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x000055fecfeabdd8>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag(@photo.image.thumb.url, alt: 'Image') if @photo.image? %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_47276449104220'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 11:58:30 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ubuntu/environment/mate/app/views/photos/show.html.erb:16: syntax error, unexpected '<', expecting ')'
+/home/ubuntu/environment/mate/app/views/photos/show.html.erb:24: unterminated regexp meets end of file
+          end
+              ^
+/home/ubuntu/environment/mate/app/views/photos/show.html.erb:24: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/photos/show.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/photos/show.html.erb:24: unterminated regexp meets end of file
+app/views/photos/show.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 11:58:38 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x000055fecfea05f0>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag(@photo.image.thumb.url) %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_47276449114840'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 11:58:45 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 11:58:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f5592123a88>):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag(@photo.image.thumb.url) %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_70002749702500'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 12:00:51 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Version thumb doesn't exist!):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag(@photo.image.url(:thumb)) %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_47276449199360'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 12:01:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Version thumb doesn't exist!):
+    12: 
+    13: <p>
+    14:   <strong>Image:</strong>
+    15:   <%= image_tag @photo.image.url(:thumb) %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  
+app/views/photos/show.html.erb:15:in `_app_views_photos_show_html_erb__3260257128291071299_47276441654800'
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 12:01:19 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:04:19 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 12:04:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:04:46 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/environment/mate/app/views/photos/index.html.erb:20: syntax error, unexpected ')', expecting '='
+...ffer.append=( photo.image,url );@output_buffer.safe_append='...
+...                              ^
+/home/ubuntu/environment/mate/app/views/photos/index.html.erb:25: syntax error, unexpected end, expecting ')'
+'.freeze;     end 
+              ^~~
+/home/ubuntu/environment/mate/app/views/photos/index.html.erb:34: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntu/environment/mate/app/views/photos/index.html.erb:36: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/photos/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/photos/index.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/photos/index.html.erb:34: syntax error, unexpected ensure, expecting ')'
+app/views/photos/index.html.erb:36: syntax error, unexpected end, expecting ')'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:04:54 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/4" for 121.134.206.100 at 2019-08-23 12:04:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:05:12 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    17:       <tr>
+    18:         <td><%= photo.title %></td>
+    19:         <td><%= photo.content %></td>
+    20:         <td><%= @photo.image.url %></td>
+    21:         <td><%= link_to 'Show', photo %></td>
+    22:         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    23:         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/photos/index.html.erb:20:in `block in _app_views_photos_index_html_erb__1796680056276793836_70002751496860'
+app/views/photos/index.html.erb:16:in `_app_views_photos_index_html_erb__1796680056276793836_70002751496860'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:05:18 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:05:27 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:05:38 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f5594ce9258>):
+    17:       <tr>
+    18:         <td><%= photo.title %></td>
+    19:         <td><%= photo.content %></td>
+    20:         <td><%= image_tag photo.image.thumb.url %></td>
+    21:         <td><%= link_to 'Show', photo %></td>
+    22:         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    23:         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/photos/index.html.erb:20:in `block in _app_views_photos_index_html_erb__1796680056276793836_70002772692980'
+app/views/photos/index.html.erb:16:in `_app_views_photos_index_html_erb__1796680056276793836_70002772692980'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:05:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:06:02 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:06:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/photos/3" for 121.134.206.100 at 2019-08-23 12:06:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7VpkTSY3uXyoDJJ12vVFydcw0q/m/gT0v8dEh4fxScd7CVesTZObUYMuJr50SV6Egf58GLKApopQ9MARTeMr0A==", "id"=>"3"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (1.0ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 3]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 27ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:06:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/photos/4" for 121.134.206.100 at 2019-08-23 12:06:34 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t0wwHjUN9C92QjbHBnwidiaXO5ZS0JwB5K24gKSctK8hHwP/XqnWAl1gggyowDk7cFmVIQauPn8LnjwWbo7WuA==", "id"=>"4"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (1.0ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 4]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 27ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:06:34 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:06:40 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:06:52 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"chAyVpQE+jzaFV5RTukwvX5oRbR8kqZndsMu4kspq5jkQwG3/6DYEfE36prgVSvwKKbrAyjsBBmZ8Kp0gTvJjw==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055fecff2dd88 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1rrwjsi.jpg>, @original_filename="놀면 뭐하니 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (0.9ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "놀면_뭐하니__2_.jpg"], ["created_at", "2019-08-23 12:06:52.506568"], ["updated_at", "2019-08-23 12:06:52.506568"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/5
+Completed 302 Found in 32ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/photos/5" for 121.134.206.100 at 2019-08-23 12:06:52 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:06:58 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:07:38 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for #<ImageUploader:0x00007f559146d1b8>):
+    17:       <tr>
+    18:         <td><%= photo.title %></td>
+    19:         <td><%= photo.content %></td>
+    20:         <td><%= image_tag photo.image.thumb.url %></td>
+    21:         <td><%= link_to 'Show', photo %></td>
+    22:         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    23:         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/photos/index.html.erb:20:in `block in _app_views_photos_index_html_erb__1796680056276793836_70002742977200'
+app/views/photos/index.html.erb:16:in `_app_views_photos_index_html_erb__1796680056276793836_70002742977200'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:08:26 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg" for 121.134.206.100 at 2019-08-23 12:08:26 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:08:39 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg" for 121.134.206.100 at 2019-08-23 12:08:40 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:08:43 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:08:54 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5591ef1170 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-19v3ztp.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `resize_to_fill' for #<ImageUploader::Uploader70002748694120:0x00007f5592b9a4d0>):
+  
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:83:in `block (2 levels) in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `block in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:15:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:74:in `process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:275:in `block in cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:44:in `block in cache'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `map'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `cache'
+carrierwave (1.3.1) lib/carrierwave/mount.rb:146:in `image='
+carrierwave (1.3.1) lib/carrierwave/orm/activerecord.rb:70:in `image='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+inherited_resources (1.10.0) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+inherited_resources (1.10.0) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:09:24 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592e2fcb8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-poqhil.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `resize_to_fill' for #<ImageUploader::Uploader70002755263160:0x00007f5592e85230>):
+  
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:83:in `block (2 levels) in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `block in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:15:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:74:in `process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:275:in `block in cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:44:in `block in cache'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `map'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `cache'
+carrierwave (1.3.1) lib/carrierwave/mount.rb:146:in `image='
+carrierwave (1.3.1) lib/carrierwave/orm/activerecord.rb:70:in `image='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+inherited_resources (1.10.0) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+inherited_resources (1.10.0) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:09:48 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5591357b48 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-s4zzlw.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+TypeError (nil is not a symbol nor a string):
+  
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:83:in `block (2 levels) in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `block in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:15:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:74:in `process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:275:in `block in cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:44:in `block in cache'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `map'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `cache'
+carrierwave (1.3.1) lib/carrierwave/mount.rb:146:in `image='
+carrierwave (1.3.1) lib/carrierwave/orm/activerecord.rb:70:in `image='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+inherited_resources (1.10.0) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+inherited_resources (1.10.0) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:09:56 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055fed0061d30 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1i4eqqk.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+TypeError (nil is not a symbol nor a string):
+  
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:83:in `block (2 levels) in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:75:in `block in process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:15:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/processing.rb:74:in `process!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:14:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:275:in `block in cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/versions.rb:273:in `cache_versions!'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `block in with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `each'
+carrierwave (1.3.1) lib/carrierwave/uploader/callbacks.rb:16:in `with_callbacks'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:137:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:44:in `block in cache'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `map'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `cache'
+carrierwave (1.3.1) lib/carrierwave/mount.rb:146:in `image='
+carrierwave (1.3.1) lib/carrierwave/orm/activerecord.rb:70:in `image='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+inherited_resources (1.10.0) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+inherited_resources (1.10.0) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:10:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592a62720 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-2dyiwk.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (0.9ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2"], ["content", "2"], ["image", "놀면_뭐하니__7_.jpg"], ["created_at", "2019-08-23 12:10:16.884188"], ["updated_at", "2019-08-23 12:10:16.884188"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/6
+Completed 302 Found in 347ms (ActiveRecord: 14.4ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:10:22 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592b45a20 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-zfddry.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (0.8ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2"], ["content", "2"], ["image", "놀면_뭐하니__7_.jpg"], ["created_at", "2019-08-23 12:10:23.050516"], ["updated_at", "2019-08-23 12:10:23.050516"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/7
+Completed 302 Found in 200ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/photos/7" for 121.134.206.100 at 2019-08-23 12:10:24 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/7" for 121.134.206.100 at 2019-08-23 12:10:40 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 71.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:10:50 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/C2i8LW7U2mP1QeeLJFrF/+KU1tnKC+45++GKadBfi1o4VqqXLPYI0d4NXWDl7hCTCH+jniAsAMrDqObI9n7w==", "photo"=>{"title"=>"2", "content"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5591f00a58 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1x3lnyw.jpg>, @original_filename="놀면 뭐하니 (7).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (7).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (1.0ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2"], ["content", "2"], ["image", "놀면_뭐하니__7_.jpg"], ["created_at", "2019-08-23 12:10:51.007346"], ["updated_at", "2019-08-23 12:10:51.007346"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/8
+Completed 302 Found in 169ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/photos/8" for 121.134.206.100 at 2019-08-23 12:10:51 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/8" for 121.134.206.100 at 2019-08-23 12:11:20 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 72ms (Views: 63.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:11:24 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:11:27 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.2ms)
+  Rendered photos/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:11:34 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75x61EOJj9U/HUKSW1dusT5w5hWjCnQl2SC7HABifQZ5z0k1KC2t+BQ/9ln163X8aL5Iovd01ls2Ez+KynAfEQ==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592e72658 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-puc7hk.jpg>, @original_filename="놀면 뭐하니 (3).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEB\x86\x80\xEB\xA9\xB4 \xEB\xAD\x90\xED\x95\x98\xEB\x8B\x88 (3).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "놀면_뭐하니__3_.jpg"], ["created_at", "2019-08-23 12:11:34.867295"], ["updated_at", "2019-08-23 12:11:34.867295"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/9
+Completed 302 Found in 100ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/photos/9" for 121.134.206.100 at 2019-08-23 12:11:34 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:11:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg" for 121.134.206.100 at 2019-08-23 12:11:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/5/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__2_.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/photos/5" for 121.134.206.100 at 2019-08-23 12:12:01 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ec9YaV7w7j0JcacMGD7whS3mlQhFq3BkEW4ye5dcTRCHnGuINVTMECJTE8e2guvIeyg7vxHV0hr+XbbtXU4vBw==", "id"=>"5"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (0.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 5]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 32ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:12:01 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:12:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:12:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ECTcyaDQDFgQV5bqr9YVhCW5ssstAOab0e6wyxWE58uGd+8oy3QudTt1IiEBag7Jc3ccfHl+ROU+3TRd35aF3A==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5590a63398 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-xn7wnv.jpg>, @original_filename="original.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"original.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (1.0ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "original.jpg"], ["created_at", "2019-08-23 12:12:16.784669"], ["updated_at", "2019-08-23 12:12:16.784669"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/10
+Completed 302 Found in 734ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/photos/10" for 121.134.206.100 at 2019-08-23 12:12:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:12:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/photos/6" for 121.134.206.100 at 2019-08-23 12:13:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RBnHJw6DnunGMfwHegjt3t+GjRwtyA42yahocINMPVnSSvTGZSe8xO0TSMzUtPaTiUgjq3m2rEgmm+zmSV5fTg==", "id"=>"6"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (1.0ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 6]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 28ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:13:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 98ms (Views: 97.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/photos/8" for 121.134.206.100 at 2019-08-23 12:13:09 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KRLFVnrrJ1sNF/Ldd6Kcyugr1DvhPiuAE1YHMGA48rO/Qfa3EU8FdiY1RhbZHoeHvuV6jLVAif78ZYOmqiqQpA==", "id"=>"8"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (29.8ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 8]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 55ms (ActiveRecord: 43.4ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:13:09 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/photos/9" for 121.134.206.100 at 2019-08-23 12:13:10 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tI55mSscc+sv9wsDPMOHQFLUaeD4uTTfFpfWW8zWwEki3Up4QLhRxgTVv8iSf5wNBBrHV6zHlqH5pFLNBsSiXg==", "id"=>"9"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (1.0ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 9]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 25ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:13:10 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:14:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:14:44 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jb7I/uPmYyh/0jrOA5AIAwW+jsqC7MtNSLSg+ZSHgKmz7fsfiEJBBVTwjgWtLBNOU3AgfdaSaTOnhyRvXpXivg==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055fecfc9be80 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-51qgag.jpeg>, @original_filename="치스비치 4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 4.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.2ms)
+  Rendered photos/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 461ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:14:53 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jb7I/uPmYyh/0jrOA5AIAwW+jsqC7MtNSLSg+ZSHgKmz7fsfiEJBBVTwjgWtLBNOU3AgfdaSaTOnhyRvXpXivg==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592b0eea8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-5rpq2q.jpeg>, @original_filename="치스비치 4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 4.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 442ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:14:59 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SW9hU125No5RSYfP/htnClj94mpBPpT4Wf1LWpzqtLvfPFKyNh0Uo3prMwRQp3xHDjNM3RVANoa2zs/MVvjWrA==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055fececa5eb8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-1fhwtdb.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.2ms)
+  Rendered photos/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 341ms (Views: 47.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:15:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:15:08 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jb7I/uPmYyh/0jrOA5AIAwW+jsqC7MtNSLSg+ZSHgKmz7fsfiEJBBVTwjgWtLBNOU3AgfdaSaTOnhyRvXpXivg==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f55943fafc0 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-18xrnzb.jpeg>, @original_filename="치스비치 4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 4.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.2ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 399ms (Views: 52.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-23 12:15:19 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:15:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:15:23 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:15:29 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tl88ifISM6WpJLWU2C07QBzq+/EiLYWiWoCIeolSPeQgDA9ombYRiIIGAV92kSANSiRVRnZTJ9y1swzsQ0Bf8w==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5592c6a5e0 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-5952-dv8ekr.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 395ms (Views: 65.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:16:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tl88ifISM6WpJLWU2C07QBzq+/EiLYWiWoCIeolSPeQgDA9ombYRiIIGAV92kSANSiRVRnZTJ9y1swzsQ0Bf8w==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000558ccc725e80 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-7159-m0gyvr.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (3.5ms)
+  Rendered photos/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 835ms (Views: 606.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:16:10 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tl88ifISM6WpJLWU2C07QBzq+/EiLYWiWoCIeolSPeQgDA9ombYRiIIGAV92kSANSiRVRnZTJ9y1swzsQ0Bf8w==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a8cc6afe8 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-7159-8gnzza.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.2ms)
+  Rendered photos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 312ms (Views: 52.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:16:29 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tl88ifISM6WpJLWU2C07QBzq+/EiLYWiWoCIeolSPeQgDA9ombYRiIIGAV92kSANSiRVRnZTJ9y1swzsQ0Bf8w==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a8e8f1298 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-7159-d487w6.jpeg>, @original_filename="치스비치 프로필 2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.4ms)
+  Rendered photos/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 310ms (Views: 63.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:16:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w0L9GbwxyTWTexBuQcWOn3nOS7dCh+fPijivQ+KC09hVEc7415XrGLhZpKXveZXSLwDlABb5RbFlCyvVKJCxzw==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a8d5a2de0 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-7159-dexsnw.png>, @original_filename="치스비치 프로필 2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"\xEC\xB9\x98\xEC\x8A\xA4\xEB\xB9\x84\xEC\xB9\x98 \xED\x94\x84\xEB\xA1\x9C\xED\x95\x84 2.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Photo"}
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOSPC (No space left on device - copy_file_range):
+  
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1387:in `copy_stream'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1387:in `block (2 levels) in copy_file'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1386:in `open'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1386:in `block in copy_file'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1385:in `open'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1385:in `copy_file'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:492:in `copy_file'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:419:in `block in cp'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1557:in `block in fu_each_src_dest'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1573:in `fu_each_src_dest0'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:1555:in `fu_each_src_dest'
+/home/ubuntu/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/fileutils.rb:418:in `cp'
+carrierwave (1.3.1) lib/carrierwave/sanitized_file.rb:235:in `copy!'
+carrierwave (1.3.1) lib/carrierwave/sanitized_file.rb:225:in `copy_to'
+carrierwave (1.3.1) lib/carrierwave/uploader/cache.rb:134:in `cache!'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:44:in `block in cache'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `map'
+carrierwave (1.3.1) lib/carrierwave/mounter.rb:42:in `cache'
+carrierwave (1.3.1) lib/carrierwave/mount.rb:146:in `image='
+carrierwave (1.3.1) lib/carrierwave/orm/activerecord.rb:70:in `image='
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `public_send'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `each'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes'
+activerecord (5.2.3) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes'
+activemodel (5.2.3) lib/active_model/attribute_assignment.rb:35:in `assign_attributes'
+activerecord (5.2.3) lib/active_record/core.rb:315:in `initialize'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+activerecord (5.2.3) lib/active_record/inheritance.rb:66:in `new'
+inherited_resources (1.10.0) lib/inherited_resources/base_helpers.rb:52:in `build_resource'
+inherited_resources (1.10.0) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:16:58 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:17:01 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 121.134.206.100 at 2019-08-23 12:20:20 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.6ms)
+  Rendered photos/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 121.134.206.100 at 2019-08-23 12:20:58 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N1yjp/m2rRzb0pPSm6w5n5mt39R5QeQADdEuXknDlV2hD5BGkhKPMfDwJxk1ECLSz2NxYy0/Rn7i4qrIg9H3Sg==", "photo"=>{"title"=>"1", "content"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000558ccbefbe08 @tempfile=#<Tempfile:/tmp/RackMultipart20190823-7159-1i5m8br.jpg>, @original_filename="csvc_b_1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"csvc_b_1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Create (1.8ms)[0m  [1m[32mINSERT INTO "photos" ("title", "content", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "1"], ["content", "1"], ["image", "csvc_b_1.jpg"], ["created_at", "2019-08-23 12:20:59.353227"], ["updated_at", "2019-08-23 12:20:59.353227"]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos/11
+Completed 302 Found in 945ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/photos/11" for 121.134.206.100 at 2019-08-23 12:20:59 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering photos/show.html.erb within layouts/application
+  Rendered photos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 93ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:21:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/uploads/photo/image/7/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__7_.jpg" for 121.134.206.100 at 2019-08-23 12:21:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Started GET "/uploads/photo/image/10/thumb_original.jpg" for 121.134.206.100 at 2019-08-23 12:21:03 +0000
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/7/thumb_%EB%86%80%EB%A9%B4_%EB%AD%90%ED%95%98%EB%8B%88__7_.jpg"):
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/10/thumb_original.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/photos/7" for 121.134.206.100 at 2019-08-23 12:21:06 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r6hd+ke//SmBQf63HdHD8tPPrF+i+lrhAask/QBmHpo5+24bLBvfBKpjSnyzbdi/hQEC6PaE+J/umKBrynR8jQ==", "id"=>"7"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (0.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 7]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 26ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:21:06 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/photo/image/10/thumb_original.jpg" for 121.134.206.100 at 2019-08-23 12:21:06 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/photo/image/10/thumb_original.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/photos/10" for 121.134.206.100 at 2019-08-23 12:21:08 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cbDMYlQPYn6qp+UvzLnsdkcoFgfHv7jDtbYmhxLk7fvn4/+DP6tAU4GFUeRiBfc7Eea4sJPBGr1ahaIR2PaP7A==", "id"=>"10"}
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Destroy (0.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 10]]
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://e522e2e0fdb74c49be08bc11764da4b6.vfs.cloud9.ap-northeast-1.amazonaws.com/photos
+Completed 302 Found in 25ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/photos" for 121.134.206.100 at 2019-08-23 12:21:08 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:16
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 79ms (Views: 78.6ms | ActiveRecord: 0.1ms)
+
+

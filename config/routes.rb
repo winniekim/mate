@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   get 'messages/index'
   get 'chats/create'
   get 'chats/new'

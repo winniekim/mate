@@ -50,6 +50,9 @@
           <li class="nav-item dropdown">
             <%= link_to "Chat", chats_path, class: "nav-link" %>
           </li>
+          <li class="nav-item dropdown">
+            <%= link_to "Photo", photos_path, class: "nav-link" %>
+          </li>
           <li class="nav-item">
             <% if user_signed_in? %>
               <%= link_to 'Logout', destroy_user_session_path, class: "nav-link", method: :delete %>
