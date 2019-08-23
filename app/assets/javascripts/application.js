@@ -10,10 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require materialize-sprockets
-
 //= require rails-ujs
 //= require activestorage
+//= require materialize
 
 //= require jquery3 
 //= require popper 

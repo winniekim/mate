@@ -21,5 +21,10 @@ class DiariesController < ApplicationController
 
     redirect_to diaries_path
   end
+  
+  def destroy
+    Diary.destroy(params[:id])
+    redirect_to diaries_path
+  end
 
 end
