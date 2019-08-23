@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <script src="https://js.pusher.com/4.1/pusher.min.js"></script> 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     </head>
   
@@ -35,8 +36,8 @@
           <li class="nav-item">
             <a class="nav-link" href="/home/second">About</a>
           </li>
-          <li class="nav-item">
-            <%= link_to "Calendar", calendars_path, class: "nav-link" %>
+          <!--<li class="nav-item">-->
+          <!--  <%= link_to "Calendar", calendars_path, class: "nav-link" %>-->
           </li>
           <li class="nav-item">
             <%= link_to "Secret D.", diaries_path, class: "nav-link" %>
@@ -44,8 +45,8 @@
           <li class="nav-item dropdown">
             <%= link_to "Picnic", picnics_path, class: "nav-link" %>
           </li>
-          <li class="nav-item dropdown">
-            <%= link_to "Wishlist", diaries_path, class: "nav-link" %>
+          <!--<li class="nav-item dropdown">-->
+          <!--  <%= link_to "Wishlist", diaries_path, class: "nav-link" %>-->
           </li>
           <li class="nav-item dropdown">
             <%= link_to "Chat", chats_path, class: "nav-link" %>
