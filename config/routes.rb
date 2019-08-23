@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'chats/new'
   get 'chats/show'
   get 'chats/index'
+  get 'home/second'
   root 'home#index'
 
   resources :diaries
