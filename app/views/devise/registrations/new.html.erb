@@ -20,6 +20,10 @@
           <%= f.label :password_confirmation, class:"text-uppercase" %><br />
           <%= f.password_field :password_confirmation, class: "form-control" %>
         </div>
+        <div class="field">
+          <%= f.label :username %><br />
+          <%= f.text_field :username %>
+        </div>
         <div class="actions">
           <%= f.submit "Sign up" %>
         </div>

@@ -1,23 +1,57 @@
-안녕하세요 <%= current_user.email %> 님<br>
-여기는 Diary의 index 입니다.<br>
-<%= link_to "글쓰기", new_diary_path %><hr>
-
-<div class="row" style="padding:0 20px;">
-    <% Diary.all.each do |d| %>
-        <div class="card col-4">
-          <div class="view overlay">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-        
-          <div class="card-body">
-            <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
-            <h4 class="card-title"><%= d.title %></h4>
-            <hr>
-            <p class="card-text"><%= d.content %></p>
-          </div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="http://playwares.com/dslr/files/attach/images/152437/049/925/007/be8d7c9f2bc13c8285eb9a629b981a98.JPG" />
+                </div>
+                <div class="card-content">
+                    <div class="card-title"><%= current_user.username %></div>
+                    <p>이메일 : <%= current_user.email %></p>
+                                        <p>이메일 : <%= current_user.email %></p>
+                    <p>올린 글 개수 : <%= @diaries_count %></p>
+                  
+                </div>
+            </div>
         </div>
-    <% end %>
-</div>adasdas
+        <div class="col s12 m8">
+            <% Diary.all.each do |d| %>
+
+            <% end %>
+        </div>
+    </div>
+</div>
+<hr>
+  <div class="container">
+    <div class="input-field">
+      <%= link_to new_diary_path do %>
+          <center><button class="btn">다이어리 쓰기</button></center>
+      <% end %>
+    </div>
+  </div>
+<hr>
+<div class="container">
+  <div class="row" style="padding:0 20px;">
+
+        <% Diary.all.each do |d| %>
+            <div class="card col-4">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+            
+              <div class="card-body">
+                <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                <h4 class="card-title"><%= d.title %></h4>
+                <hr>
+                <p class="card-text"><%= d.content %></p>
+              </div>
+            </div>
+        <% end %>
+  </div>
+  
+안녕하세요 <%= current_user.email %> 님<br>
+
+</div>

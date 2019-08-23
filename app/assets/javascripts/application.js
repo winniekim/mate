@@ -11,10 +11,8 @@
 // about supported directives.
 
 //= require materialize-sprockets
-//= require sweetalert2
 
 //= require rails-ujs
-//= require jquery3
 //= require activestorage
 
 //= require jquery3 

@@ -1,6 +1,8 @@
 class DiariesController < ApplicationController
   before_action :authenticate_user!
   def index
+    @diaries = Diary.all.order('created_at desc')
+    @diaries_count = current_user.diaries.length
   end
 
   def new
